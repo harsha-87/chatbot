@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Cars in India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+            color: #4CAF50; /* Green for eco-friendly look */
+        }
+
+        /* Car Card Styling */
+        .car {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #121212;
+            box-shadow: 2px 2px 15px rgba(76, 175, 80, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 20px rgba(76, 175, 80, 0.5);
+        }
+
+        .car img {
+            max-width: 250px;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover img {
+            transform: rotate(2deg) scale(1.1);
+        }
+
+        .car-details {
+            max-width: 600px;
+        }
+
+        .car-details h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #4CAF50;
+        }
+
+        .car-details p {
+            margin: 5px 0;
+            color: #ddd;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hybrid Cars Available in India</h1>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Camry/7935/1676017063883/front-left-side-47.jpg" alt="Toyota Camry Hybrid">
+        <div class="car-details">
+            <h2>Toyota Camry Hybrid</h2>
+            <p><strong>Price:</strong> ₹46.17 Lakh</p>
+            <p><strong>Engine:</strong> 2487 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 19.1 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lexus/RX/7935/1676017063883/front-left-side-47.jpg" alt="Lexus RX Hybrid">
+        <div class="car-details">
+            <h2>Lexus RX 500h</h2>
+            <p><strong>Price:</strong> ₹1.03 Crore</p>
+            <p><strong>Engine:</strong> 2393 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 18 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/City-Hybrid/7935/1676017063883/front-left-side-47.jpg" alt="Honda City Hybrid">
+        <div class="car-details">
+            <h2>Honda City e:HEV</h2>
+            <p><strong>Price:</strong> ₹20.39 Lakh</p>
+            <p><strong>Engine:</strong> 1498 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 27.1 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/X5/7935/1676017063883/front-left-side-47.jpg" alt="BMW X5 Hybrid">
+        <div class="car-details">
+            <h2>BMW X5 xDrive45e</h2>
+            <p><strong>Price:</strong> ₹1.00 Crore (Expected)</p>
+            <p><strong>Engine:</strong> 2998 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 14 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Volvo/XC90/7935/1676017063883/front-left-side-47.jpg" alt="Volvo XC90 Hybrid">
+        <div class="car-details">
+            <h2>Volvo XC90 Recharge</h2>
+            <p><strong>Price:</strong> ₹98.50 Lakh</p>
+            <p><strong>Engine:</strong> 1969 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 46 km/l (EV Mode)</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Porsche/Cayenne/7935/1676017063883/front-left-side-47.jpg" alt="Porsche Cayenne Hybrid">
+        <div class="car-details">
+            <h2>Porsche Cayenne E-Hybrid</h2>
+            <p><strong>Price:</strong> ₹1.70 Crore</p>
+            <p><strong>Engine:</strong> 2995 cc Hybrid</p>
+            <p><strong>Fuel Efficiency:</strong> 29.4 km/l (EV Mode)</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+        </div>
+    </div>
+
+</body>
+</html>

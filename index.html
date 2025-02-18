@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBot AI - Your Automotive Assistant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .chat-message {
+            transition: all 0.3s ease;
+        }
+        .chat-container {
+            height: 400px;
+        }
+        .quick-actions button {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">PLUTO AI</h1>
+            <div class="space-x-4">
+                <a href="#features" class="hover:text-gray-200">Features</a>
+                <a href="#categories" class="hover:text-gray-200">Categories</a>
+                <a href="#schedule" class="hover:text-gray-200">Schedule</a>
+                <a href="#chat" class="hover:text-gray-200">Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-700 text-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-4">Your AI-Powered Automotive Assistant</h2>
+            <p class="text-xl mb-8">Get instant answers, schedule test drives, and connect with agents</p>
+            <div class="space-x-4">
+                <a href="#chat" class="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100">Start Chatting</a>
+                <a href="#schedule" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-700">Schedule Test Drive</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">🚗</div>
+                    <h3 class="text-xl font-bold mb-2">Car Specifications</h3>
+                    <p>Detailed technical information about any car model</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-2">Buying Advice</h3>
+                    <p>Personalized recommendations based on your needs</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold mb-2">Maintenance Tips</h3>
+                    <p>Expert guidance on car care and maintenance</p>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-bold mb-2">Easy Scheduling</h3>
+                    <p>Book test drives and agent calls instantly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Schedule Your Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Test Drive Scheduling -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold mb-4">Schedule Test Drive</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Select Car Model</label>
+                            <select class="w-full p-2 border rounded">
+                                <option>Select a model</option>
+                                <option>Model A Sedan</option>
+                                <option>Model B SUV</option>
+                                <option>Model C Sports</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Preferred Date</label>
+                            <input type="date" class="w-full p-2 border rounded">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Preferred Time</label>
+                            <input type="time" class="w-full p-2 border rounded">
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Schedule Test Drive</button>
+                    </form>
+                </div>
+
+                <!-- Agent Call Scheduling -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-2xl font-bold mb-4">Schedule Agent Call</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block mb-2">Your Name</label>
+                            <input type="text" class="w-full p-2 border rounded" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Phone Number</label>
+                            <input type="tel" class="w-full p-2 border rounded" placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label class="block mb-2">Preferred Time</label>
+                            <select class="w-full p-2 border rounded">
+                                <option>Morning (9 AM - 12 PM)</option>
+                                <option>Afternoon (12 PM - 4 PM)</option>
+                                <option>Evening (4 PM - 7 PM)</option>
+                            </select>
+                        </div>
+                        <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Schedule Call</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Car Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Sedans</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">SUVs</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Sports Cars</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Electric Vehicles</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Luxury Cars</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Hybrids</button>
+                <button class="p-4 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">Compact Cars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Chat with AutoBot AI</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="chat-container bg-gray-50 rounded-lg p-4 mb-4 overflow-y-auto">
+                    <div class="chat-message bg-blue-100 p-3 rounded-lg mb-4">
+                        <p class="font-bold">AutoBot AI</p>
+                        <p>Hello! I'm your automotive assistant. How can I help you today?</p>
+                    </div>
+                    <!-- Quick Actions -->
+                    <div class="quick-actions flex flex-wrap gap-2 mb-4">
+                        <button class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm hover:bg-blue-100">Schedule Test Drive</button>
+                        <button class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm hover:bg-blue-100">Talk to Agent</button>
+                        <button class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm hover:bg-blue-100">Car Comparison</button>
+                        <button class="bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm hover:bg-blue-100">Price Quote</button>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Type your question here..." class="flex-1 p-3 border rounded-lg focus:outline-none focus:border-blue-500">
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send</button>
+                    </div>
+                    <div class="text-sm text-gray-500">
+                        Suggested: "Compare SUVs under 40,00,000" • "Show me electric vehicles" • "Schedule a test drive"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AutoBot AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

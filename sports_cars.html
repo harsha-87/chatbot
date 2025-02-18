@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Cars in India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121212;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+            color: #ff4500;
+        }
+
+        /* Car Card Styling */
+        .car {
+            border: 2px solid #ff4500;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            box-shadow: 2px 2px 15px rgba(255, 69, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 20px rgba(255, 69, 0, 0.5);
+        }
+
+        .car img {
+            max-width: 250px;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover img {
+            transform: rotate(2deg) scale(1.1);
+        }
+
+        .car-details {
+            max-width: 600px;
+        }
+
+        .car-details h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #ff4500;
+        }
+
+        .car-details p {
+            margin: 5px 0;
+            color: #ddd;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sports Cars Available in India</h1>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/Roma/7935/1676017063883/front-left-side-47.jpg" alt="Ferrari Roma">
+        <div class="car-details">
+            <h2>Ferrari Roma</h2>
+            <p><strong>Price:</strong> ₹3.76 Crore</p>
+            <p><strong>Engine:</strong> 3855 cc, V8 Turbo</p>
+            <p><strong>Top Speed:</strong> 320 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Huracan-Evo/7935/1676017063883/front-left-side-47.jpg" alt="Lamborghini Huracan">
+        <div class="car-details">
+            <h2>Lamborghini Huracán Evo</h2>
+            <p><strong>Price:</strong> ₹3.22 - ₹4.99 Crore</p>
+            <p><strong>Engine:</strong> 5204 cc, V10</p>
+            <p><strong>Top Speed:</strong> 325 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Porsche/911/7935/1676017063883/front-left-side-47.jpg" alt="Porsche 911">
+        <div class="car-details">
+            <h2>Porsche 911</h2>
+            <p><strong>Price:</strong> ₹1.86 - ₹4.26 Crore</p>
+            <p><strong>Engine:</strong> 2981 cc, Flat-6</p>
+            <p><strong>Top Speed:</strong> 330 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Audi/R8/7935/1676017063883/front-left-side-47.jpg" alt="Audi R8">
+        <div class="car-details">
+            <h2>Audi R8</h2>
+            <p><strong>Price:</strong> ₹2.72 Crore</p>
+            <p><strong>Engine:</strong> 5204 cc, V10</p>
+            <p><strong>Top Speed:</strong> 330 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/McLaren/GT/7935/1676017063883/front-left-side-47.jpg" alt="McLaren GT">
+        <div class="car-details">
+            <h2>McLaren GT</h2>
+            <p><strong>Price:</strong> ₹4.50 Crore</p>
+            <p><strong>Engine:</strong> 3994 cc, V8 Twin-Turbo</p>
+            <p><strong>Top Speed:</strong> 326 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/M8/7935/1676017063883/front-left-side-47.jpg" alt="BMW M8 Coupe">
+        <div class="car-details">
+            <h2>BMW M8 Coupe</h2>
+            <p><strong>Price:</strong> ₹2.44 Crore</p>
+            <p><strong>Engine:</strong> 4395 cc, V8 Twin-Turbo</p>
+            <p><strong>Top Speed:</strong> 305 km/h</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+</body>
+</html>

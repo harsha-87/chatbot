@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Cars in India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0a0a0a;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+            color: #00ffcc;
+        }
+
+        /* Car Card Styling */
+        .car {
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #121212;
+            box-shadow: 2px 2px 15px rgba(0, 255, 204, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 20px rgba(0, 255, 204, 0.5);
+        }
+
+        .car img {
+            max-width: 250px;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover img {
+            transform: rotate(2deg) scale(1.1);
+        }
+
+        .car-details {
+            max-width: 600px;
+        }
+
+        .car-details h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #00ffcc;
+        }
+
+        .car-details p {
+            margin: 5px 0;
+            color: #ddd;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Electric Cars Available in India</h1>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Nexon-EV/7935/1676017063883/front-left-side-47.jpg" alt="Tata Nexon EV">
+        <div class="car-details">
+            <h2>Tata Nexon EV</h2>
+            <p><strong>Price:</strong> ₹14.49 - ₹19.29 Lakh</p>
+            <p><strong>Battery:</strong> 30.2 kWh</p>
+            <p><strong>Range:</strong> 325 km</p>
+            <p><strong>Charging Time:</strong> 60 min (Fast Charge)</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/MG/ZS-EV/7935/1676017063883/front-left-side-47.jpg" alt="MG ZS EV">
+        <div class="car-details">
+            <h2>MG ZS EV</h2>
+            <p><strong>Price:</strong> ₹23.38 - ₹27.40 Lakh</p>
+            <p><strong>Battery:</strong> 50.3 kWh</p>
+            <p><strong>Range:</strong> 461 km</p>
+            <p><strong>Charging Time:</strong> 60 min (Fast Charge)</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Kona-Electric/7935/1676017063883/front-left-side-47.jpg" alt="Hyundai Kona Electric">
+        <div class="car-details">
+            <h2>Hyundai Kona Electric</h2>
+            <p><strong>Price:</strong> ₹23.84 - ₹24.03 Lakh</p>
+            <p><strong>Battery:</strong> 39.2 kWh</p>
+            <p><strong>Range:</strong> 452 km</p>
+            <p><strong>Charging Time:</strong> 57 min (Fast Charge)</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/iX1/7935/1676017063883/front-left-side-47.jpg" alt="BMW iX1">
+        <div class="car-details">
+            <h2>BMW iX1</h2>
+            <p><strong>Price:</strong> ₹66.90 Lakh</p>
+            <p><strong>Battery:</strong> 66.5 kWh</p>
+            <p><strong>Range:</strong> 440 km</p>
+            <p><strong>Charging Time:</strong> 35 min (Fast Charge)</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/EQE-SUV/7935/1676017063883/front-left-side-47.jpg" alt="Mercedes-Benz EQE SUV">
+        <div class="car-details">
+            <h2>Mercedes-Benz EQE SUV</h2>
+            <p><strong>Price:</strong> ₹1.39 Crore</p>
+            <p><strong>Battery:</strong> 90.6 kWh</p>
+            <p><strong>Range:</strong> 590 km</p>
+            <p><strong>Charging Time:</strong> 32 min (Fast Charge)</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tesla/Model-3/7935/1676017063883/front-left-side-47.jpg" alt="Tesla Model 3">
+        <div class="car-details">
+            <h2>Tesla Model 3</h2>
+            <p><strong>Price:</strong> ₹70.00 Lakh (Expected)</p>
+            <p><strong>Battery:</strong> 75 kWh</p>
+            <p><strong>Range:</strong> 614 km</p>
+            <p><strong>Charging Time:</strong> 25 min (Supercharger)</p>
+        </div>
+    </div>
+
+</body>
+</html>

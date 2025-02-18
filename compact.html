@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Cars in India</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            animation: fadeIn 1s ease-in-out;
+            color: #007bff; /* Blue theme */
+        }
+
+        /* Car Card Styling */
+        .car {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 15px rgba(0, 123, 255, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 20px rgba(0, 123, 255, 0.5);
+        }
+
+        .car img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover img {
+            transform: rotate(2deg) scale(1.1);
+        }
+
+        .car-details {
+            max-width: 600px;
+        }
+
+        .car-details h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #007bff;
+        }
+
+        .car-details p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Compact Cars Available in India</h1>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Swift/7935/1676017063883/front-left-side-47.jpg" alt="Maruti Suzuki Swift">
+        <div class="car-details">
+            <h2>Maruti Suzuki Swift</h2>
+            <p><strong>Price:</strong> ₹5.99 - ₹9.03 Lakh</p>
+            <p><strong>Engine:</strong> 1197 cc</p>
+            <p><strong>Mileage:</strong> 22.56 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Grand-i10-Nios/7935/1676017063883/front-left-side-47.jpg" alt="Hyundai Grand i10 Nios">
+        <div class="car-details">
+            <h2>Hyundai Grand i10 Nios</h2>
+            <p><strong>Price:</strong> ₹5.73 - ₹8.51 Lakh</p>
+            <p><strong>Engine:</strong> 1197 cc</p>
+            <p><strong>Mileage:</strong> 20.7 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol/CNG</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Tata/Tiago/7935/1676017063883/front-left-side-47.jpg" alt="Tata Tiago">
+        <div class="car-details">
+            <h2>Tata Tiago</h2>
+            <p><strong>Price:</strong> ₹5.54 - ₹8.10 Lakh</p>
+            <p><strong>Engine:</strong> 1199 cc</p>
+            <p><strong>Mileage:</strong> 20.09 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol/CNG</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Renault/Kwid/7935/1676017063883/front-left-side-47.jpg" alt="Renault Kwid">
+        <div class="car-details">
+            <h2>Renault Kwid</h2>
+            <p><strong>Price:</strong> ₹4.70 - ₹6.45 Lakh</p>
+            <p><strong>Engine:</strong> 999 cc</p>
+            <p><strong>Mileage:</strong> 21.7 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Alto-K10/7935/1676017063883/front-left-side-47.jpg" alt="Maruti Suzuki Alto K10">
+        <div class="car-details">
+            <h2>Maruti Suzuki Alto K10</h2>
+            <p><strong>Price:</strong> ₹3.99 - ₹5.96 Lakh</p>
+            <p><strong>Engine:</strong> 998 cc</p>
+            <p><strong>Mileage:</strong> 24.39 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol/CNG</p>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Nissan/Magnite/7935/1676017063883/front-left-side-47.jpg" alt="Nissan Magnite">
+        <div class="car-details">
+            <h2>Nissan Magnite</h2>
+            <p><strong>Price:</strong> ₹6.00 - ₹11.02 Lakh</p>
+            <p><strong>Engine:</strong> 999 cc</p>
+            <p><strong>Mileage:</strong> 20.0 km/l</p>
+            <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+    </div>
+
+</body>
+</html>

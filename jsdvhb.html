@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBot AI - Your Automotive Assistant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .chat-container {
+            height: 400px;
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">PLUTO AI</h1>
+            <div class="space-x-4">
+                <a href="#features" class="hover:text-gray-200">Features</a>
+                <a href="#categories" class="hover:text-gray-200">Categories</a>
+                <a href="#schedule" class="hover:text-gray-200">Schedule</a>
+                <a href="#chat" class="hover:text-gray-200">Chat</a>
+            </div>
+            <!-- Profile Icon -->
+            <div>
+                <img src="profile-icon.png" alt="Profile" class="w-8 h-8 rounded-full cursor-pointer">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-700 text-white py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-4">Your AI-Powered Automotive Assistant</h2>
+            <p class="text-xl mb-8">Get instant answers, schedule test drives, and connect with agents</p>
+            <div class="space-x-4">
+                <button onclick="openChat()" class="bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-gray-100">Start Chatting</button>
+                <button onclick="scrollToSchedule()" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-700">Schedule Test Drive</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chat Section -->
+    <section id="chat" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Chat with AutoBot AI</h2>
+            <div class="max-w-2xl mx-auto">
+                <div id="chatbox" class="chat-container bg-gray-50 rounded-lg p-4 mb-4 overflow-y-auto">
+                    <div class="chat-message bg-blue-100 p-3 rounded-lg mb-4">
+                        <p class="font-bold">AutoBot AI</p>
+                        <p>Hello! I'm your automotive assistant. How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="Type your question here..." class="flex-1 p-3 border rounded-lg focus:outline-none focus:border-blue-500">
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Schedule Your Experience</h2>
+            <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4">Schedule Test Drive</h3>
+                <form class="space-y-4">
+                    <label class="block mb-2">Select Car Model</label>
+                    <select class="w-full p-2 border rounded">
+                        <option>Select a model</option>
+                        <option>Model A Sedan</option>
+                        <option>Model B SUV</option>
+                    </select>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Schedule Test Drive</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AutoBot AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openChat() {
+            document.getElementById('chatbox').style.display = 'block';
+            document.getElementById('chat').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToSchedule() {
+            document.getElementById('schedule').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
